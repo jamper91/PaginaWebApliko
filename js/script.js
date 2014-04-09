@@ -25,13 +25,13 @@ $(function() {
             $("body").removeClass("fixed");
         }
         $.each($section, function() {
-	      $topSection.push($(this).offset().top - 160);
+	      $topSection.push($(this).offset().top - 290);
 
 	    });
         $.each($section, function(i) {
 		    if ((wSroll >= $topSection[i]) && (wSroll <= $topSection[i] + $(this).height() + 90)) {
 		    	var $id = $('#' + this.id + '-link');
-		    	console.log($id);
+		    	//console.log($id);
 		      $id.addClass('current');
 		      
 		    } else {	
@@ -41,13 +41,30 @@ $(function() {
   		});
 
     });
-     $('.links').on('click', function(e){
-	    e.preventDefault();
-	    var currTarget = $(this).data('menu');
-    	$('html, body').stop().animate({
-      		scrollTop: $($('#' + currTarget)).offset().top - 160
-    }, 500);
-  });
+     $('.links').on('click', 
+        function(e)
+        {
+            e.preventDefault();
+            console.log("BOdy class: "+$("body").attr("class"));
+            if($("body").attr("class")=="fixed")
+            {
+                console.log("Entre 1");
+                
+                var currTarget = $(this).data('menu');
+                $('html, body').stop().animate({
+                    scrollTop: $($('#' + currTarget)).offset().top - 290
+                }, 500);
+            }else if($(this).attr("class")=="links")
+            {
+                console.log("Entre 2");
+                var currTarget = $(this).data('menu');
+                $('html, body').stop().animate({
+                    scrollTop: $($('#' + currTarget)).offset().top - 490
+                }, 500);
+            }
+            
+        
+    });
 });
 
 
