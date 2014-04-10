@@ -224,13 +224,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="links" href="#" id="do-link" data-menu="dolink">
+                                <a class="links" href="#" id="do-link" data-menu="do">
                                     esto hacemos
                                 </a>
                             </li>
                             
                             <li>
-                                <a class="links" href="#" id="our-apps-link" data-menu="our-appslink">
+                                <a class="links" href="#" id="our-apps-link" data-menu="our-apps">
                                     nuestras apps
                                 </a>
                             </li>
@@ -256,7 +256,7 @@
                             <li>
 								<a class="links" href="#" id="trabajo-link" data-menu="trabajo" >trabaje con nosotros</a>
 							</li>
-                            <li><a href="#" >contáctenos</a></li>
+                            <li><a  class="links" href="#" id="contactenos-link" data-menu="contactenos" >contáctenos</a></li>
                             
                         </ul>
                     </nav>
@@ -289,6 +289,12 @@
                             </li>
                             <li>
                                 <img src="images/Banner03.svg">
+                            </li>
+                            <li>
+                                <img src="images/banner04.svg">
+                            </li>
+                            <li>
+                                <img src="images/banner05.svg">
                             </li>
                                               
                       </ul>
@@ -390,6 +396,10 @@
                     <p>Funciona en dispositivos que usen el sistema operativo para el cual se desarolla.</p>
                     <div id="plataformas">
                     <figure>
+                        <object type="image/svg+xml" data="images/appstores.svg"></object>    
+                    </figure>
+                    
+                    <!--<figure>
                         <object type="image/svg+xml" data="images/android logo.svg">Your browser does not support SVG.</object>
                         <br>
                         <object type="image/svg+xml" data="images/google_play.png" style="width:130px">Your browser does not support SVG</object>
@@ -404,7 +414,7 @@
 	                    <object type="image/svg+xml" data="images/winlogo.svg">Your browser does not support SVG</object>
                     	<br>
                         <object type="image/svg+xml" data="images/winappstore.svg" style="width:130px">Your browser does not support SVG</object>
-                    </figure>
+                    </figure>-->
                     </div>
                     
                     
@@ -536,7 +546,10 @@
                     	<div style="background-color:#A9E1F7;display:inline-block;margin-left:-5px;margin-top:75px;width:905px;height:200px">
                            <p> Eso que necesita su empresa lo podemos convertir en una app, compartanos su idea, del resto nosotros nos ocupamos</p>
                            </div>
-                            <img src="images/botcontactenos.svg" />
+                        <a class="button">
+                            Contactenos
+                        </a>
+                            <!--<img src="images/botcontactenos.svg" />-->
                     </div>
                     
                     
@@ -556,7 +569,10 @@
                 </div>
                 
                 <div class="footer-trabajo">
-                    	<img src="images/contactenostrabaje.svg" style="vertical-align:top; float:left">
+                    	<!--<img src="images/contactenostrabaje.svg" style="vertical-align:top; float:left">-->
+                        <a class="button" style="vertical-align:top; float:left; width:350px; text-align: center">
+                            Conctactenos
+                        </a>
                     	<img src="images/poleastrabaje.svg" style="float:left;">
                 </div>
                     
@@ -571,7 +587,7 @@
                 </figure>
                 
                 <div class="descripcion">
-                    <form action="mailto:jamper91a@gmail.com" id="frmContactenos" method="post" enctype="text/plain">
+                    <form action="mailto:info@apliko.co" id="frmContactenos" method="post" enctype="text/plain">
                     	 
                     	<div id="fila1">
                         	<label> Nombres y apellidos *</label>
@@ -624,11 +640,11 @@
         <section id="ideas" class="section" style="padding-top:100px">
             <div   class="section" >
                 <figure class="titulo">
-                    <img src="images/titulocontactenos.svg" alt="Contactenos">
+                    <img src="images/tituloformideas.svg" alt="Contactenos">
                 </figure>
                 
                 <div class="descripcion">
-                    <form action="mailto:jamper91a@gmail.com" id="frmIdeas" method="post" enctype="text/plain">
+                    <form action="mailto:ideas@apliko.co" id="frmIdeas" method="post" enctype="text/plain">
                     	<div id="subtitulo"><h4>DATOS PERSONALES</h4></div> 
                     	<div id="fila1">
                         	<label> Nombres y apellidos * </label>
@@ -703,9 +719,12 @@
                         </div>
                         <div id="autorizacion">
                         	<p>Acepto terminos y condiciones</p><br/>
-                            <p><a class="button" href="">
+                            <p>
+                                <img src="images/botcontactenos.svg" />
+                                <!--<a class="button" href="">
                                 <span>Terminos y condiciones para presentacion de ideas</span>
-                            </a></p>
+                            </a>-->
+                            </p>
                             Acepto<input type="checkbox" id="acepto1" name="acepto1"  style="width:50px"/><br>
                             <p>Certifico que los datos personales son verdaderos y autorizo a su verificacion</p>
                             Acepto<input type="checkbox" id="acepto2" name="acepto2" style="width:50px" /><br> 

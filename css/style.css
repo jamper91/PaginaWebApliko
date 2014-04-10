@@ -234,6 +234,17 @@ entities-contend
     margin: 13px 0;    width: 101px;
     padding: 6px 25px;
 }
+
+.button:hover {
+    background: #439dd4;
+    box-shadow: 2px 2px 3px rgb(148, 148, 148);
+    color: white;
+    display: block;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 13px 0;    width: 101px;
+    padding: 6px 25px;
+}
 #contend-article article .second{
     margin-top: 60px;
     margin-bottom: 20px;    
@@ -766,6 +777,17 @@ company
 	width:290px;
 	height:45px;
 }
+#contactenos #fila4 .contactenos-enviar:hover
+{
+	
+	border:none;
+	background-size:auto;
+	background: #439dd4;
+	background-repeat:no-repeat;
+	width:290px;
+	height:45px;
+}
+
 #contactenos #autorizacion p
 {
 	width:100%;
