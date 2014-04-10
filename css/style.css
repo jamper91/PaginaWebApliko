@@ -905,13 +905,19 @@ company
 	color: #444;
 	text-decoration: none;
 	position:fixed;
-	bottom: 0px;
+	bottom: 100px;
 	right:40px;
 	display:none;
 	background: url('../images/up.png') no-repeat 0px 20px;
 }
 .scrollToTop:hover{
 	text-decoration:none;
+}
+
+.footer{
+    width: 100%;
+    background: #000000;
+    height: 100px;
 }
 
 

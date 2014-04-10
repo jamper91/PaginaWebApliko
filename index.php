@@ -15,18 +15,24 @@
         <meta name="author" content="juan2ramos" />       
         <meta name="description" content="Inicio" />       
         <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
-		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+        <script src="js/jquery-2.1.0.min.js"></script>
         <script src="js/prefixfree.min.js"></script>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <!-- Estilos -->
         <link rel="stylesheet" href="css/normalize.css" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="css/style.css" />
-
+        <!--Elementos para el script swiperbox-->
+        
+        <link rel="stylesheet" href="css/swipebox.css">
+        
+        
+        <!--Fin Elementos para el script swiperbox-->
 		<script type="text/javascript">
 			$(document).ready(function(e) {
-                
                 //Check to see if the window is top if not then display button
                 $(window).scroll(function(){
                     if ($(this).scrollTop() > 100) {
@@ -459,7 +465,8 @@
                     <img src="images/elcerebrito.svg" alt="idea" style="width:400px; padding-left:50px;">
                 </figure>
                 <figure class="bottom">
-                    <img src="images/video.jpg" alt="conoce el proceso  " style="margin-left:-250px; cursor:pointer">
+                    <!--<img src="images/video.jpg" alt="conoce el proceso  " style="margin-left:-250px; cursor:pointer">-->
+                    <a class="swipebox-video" rel="vimeo" href="https://www.youtube.com/watch?v=hOspzRjJAcw"><img src="images/video.jpg" alt="conoce el proceso  " style="margin-left:-250px; cursor:pointer"></a>
                 </figure>
                 <article class="gray">
                     <p>La idea de app la evaluamos integralmente, miramos que sea viable su desarollo técnico, que no tenga ninguna restricción y que tenga potencial comercial. </p>
@@ -731,8 +738,9 @@
                             <p>Autorizo a Apliko a enviarme inforación relacionada con su actividad, a mi telefono celular y correo electrónico</p>
                             Acepto<input type="checkbox" id="acepto3" name="acepto3" style="width:50px" /><br>
                         </div>
-                        <div id="fila4">
-                        	<input type="submit" class="contactenos-enviar" value="" />
+                        <div id="fila4" align="center">
+                        	<!--<input type="submit" class="contactenos-enviar" value="Presentar idea" class="button" />-->
+                            <input type="submit" value="Presentar idea" class="button" style="text-align:center;" />
                         </div>                    
                         </form>
                 </div>
@@ -742,14 +750,27 @@
                 </div>
                 
         </section>
+        
+        <div class="footer">
             
+        </div>
             <a href="#" class="scrollToTop"></a>
 
     </body>
 
        
     <!-- JavaScript -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
     <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery.swipebox.js" type="text/javascript"></script>
+    <script type="text/javascript">
+            ( function( $ ) {
+
+                /* Basic Gallery */
+                $( '.swipebox-video' ).swipebox();
+
+                
+            } )( jQuery );
+	</script>
 </html>
