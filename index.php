@@ -307,7 +307,7 @@
                 </div>
                 </div>
                 <div id="members">
-                	<object type="image/svg+xml" data="images/footer ipad logos.svg" style="top:-204px;left:210px;position:absolute;">Your browser does not support SVG</object>
+                	<object type="image/svg+xml" data="images/footer ipad logos.svg" style="top:-199px;left:324px;position:absolute;">Your browser does not support SVG</object>
                     <!--<ul>
                         <li><img src="images/google_play.png"></li>
                         <li><img src="images/appstore.svg"></li>
@@ -725,7 +725,7 @@
                             </textarea>
                         </div>
                         <div id="autorizacion">
-                        	<p>Acepto terminos y condiciones</p><br/>
+                        	<p><a href="documentos/termino.pdf" target="_blank"> Acepto terminos y condiciones</a></p><br/>
                             <p>
                                 <img src="images/botcontactenos.svg" />
                                 <!--<a class="button" href="">

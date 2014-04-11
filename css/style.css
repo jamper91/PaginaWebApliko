@@ -13,7 +13,7 @@ body{
     background: #fff;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 16px;
-	min-width:1350px;
+	min-width: 1350px;
 }
 section{
     text-align: center;
@@ -48,7 +48,7 @@ header h2{
 #header{
     margin: 0 auto;
     position: relative;
-    width: 1124px;
+    width: 1350px;
 }
 #social{
     padding: 55px 0 35px;
